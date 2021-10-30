@@ -7,19 +7,16 @@
  */
 
 import React from 'react';
-
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {StatusBar} from 'react-native';
+import Routes from './routes';
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <View>
-        <Text>Hello Dear</Text>
-      </View>
-    </SafeAreaView>
+    <>
+      <StatusBar barStyle="dark-content" backgroundColor="#f5f5f5" />
+      <Routes />
+    </>
   );
 };
-
-const styles = StyleSheet.create({});
 
 export default App;
